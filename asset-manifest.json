@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dota2-rat-detector/static/css/main.9c30e30f.css",
+    "main.js": "/dota2-rat-detector/static/js/main.083cf9af.js",
+    "static/js/453.2a40f64a.chunk.js": "/dota2-rat-detector/static/js/453.2a40f64a.chunk.js",
+    "index.html": "/dota2-rat-detector/index.html",
+    "main.9c30e30f.css.map": "/dota2-rat-detector/static/css/main.9c30e30f.css.map",
+    "main.083cf9af.js.map": "/dota2-rat-detector/static/js/main.083cf9af.js.map",
+    "453.2a40f64a.chunk.js.map": "/dota2-rat-detector/static/js/453.2a40f64a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c30e30f.css",
+    "static/js/main.083cf9af.js"
+  ]
+}
