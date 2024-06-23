@@ -1,0 +1,114 @@
+.cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ff4500;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #121212;
+  color: #ffffff;
+  overflow: hidden;
+  cursor: none; /* скрываем стандартный курсор */
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  z-index: 1;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ff4500;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e03e00;
+}
+
+.instructions {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://path/to/your/animated/background.gif') center center / cover no-repeat;
+  z-index: 0;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -2;
+  animation: move 10s infinite alternate;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
