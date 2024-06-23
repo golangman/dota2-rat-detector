@@ -1,5 +1,5 @@
 {
-  "homepage": "https://<your-username>.github.io/<repository-name>",
+  "homepage": "https://golangman.github.io/dota2-rat-detector",
   "name": "dota2-rat-detector",
   "version": "0.1.0",
   "private": true,
